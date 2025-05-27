@@ -1,0 +1,530 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0; /* Light Gray */
+    color: #f5f5f5;
+    padding-top: 70px;
+}
+
+/* Smooth transition for scroll effects */
+.navbar {
+  transition: all 0.4s ease-in-out;
+  z-index: 9999;
+}
+
+/* Navbar brand styling */
+.navbar-brand .brand-text {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+/* Nav links style */
+.navbar-nav .nav-link {
+  color: #ddd;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #ffffff;
+  border-bottom: 2px solid #f0d01d;
+}
+
+/* Logo alignment */
+.navbar-brand img {
+  border-radius: 50%;
+}
+
+/* Optional: Add background blur if navbar overlaps a video */
+.navbar.bg-dark {
+  background-color: rgba(30, 30, 30, 0.9) !important; /* Darker shade */
+  backdrop-filter: blur(10px);
+}
+
+/* Responsive nav link padding for smaller screens */
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+    padding: 0.7rem 1rem;
+  }
+}
+
+/* Hero Section */
+#home.hero {
+  background: linear-gradient(45deg, #ff7e5f, #feb47b); /* Gradient example */
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+  z-index: 1;
+}
+
+#home .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Pop-in Animation */
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.pop-text {
+  animation: popIn 0.6s ease-out forwards;
+  opacity: 0;
+  font-weight: bold;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.pop-text.delay {
+  animation-delay: 0.4s;
+  color: #ffcc00;
+}
+
+h1.pop-text {
+  font-size: 3rem;
+}
+
+p.pop-text {
+  font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  h1.pop-text {
+    font-size: 2rem;
+  }
+
+  p.pop-text {
+    font-size: 1rem;
+  }
+}
+
+/* Hero full height */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Background video */
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Overlay to darken video for text readability */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  /*  background: rgba(202, 170, 243, 0.5); */ /* Adjust for desired darkness */
+  
+}
+
+/* Content above video */
+.hero .container {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+/* Text styles */
+.pop-text {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.pop-text.delay {
+  font-size: 1.5rem;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* About Section */
+#about .card {
+  background-color: rgba(85, 86, 102, 0.7); /* Darker with opacity */
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+#about p.lead {
+  color: #ccc;
+}
+
+#teamModal .modal-content {
+  border-radius: 10px;
+}
+
+#teamModal ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal .card img {
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 4px solid #ffc107;
+}
+
+.modal .card {
+  transition: transform 0.3s ease;
+}
+
+.modal .card:hover {
+  transform: scale(1.03);
+}
+
+
+
+
+/* Sections */
+section {
+    scroll-margin-top: 100px;
+}
+
+/* Vision Section */
+#vision-section {
+  background-color: #2c3e50; /* Dark Blue */
+  padding: 60px 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 15px rgba(255, 193, 7, 0.15);
+}
+
+/* Icon Styling */
+.vision-icon {
+  font-size: 3rem;
+  animation: pulseGlow 2s infinite;
+}
+
+/* Vision Title */
+#vision-section h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Vision Text */
+#vision-section p {
+  color: #f8f9fa;
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Icon Animation */
+@keyframes pulseGlow {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.15); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.8; }
+}
+
+#services {
+  background-color: #f0f0f0; /* Light Gray */
+}
+
+#services h4 {
+  color: #ffcc00;
+}
+
+/* Service Card Hover Effect */
+.card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card-title {
+  color: #ffcc00;
+}
+
+/* Video Section */
+#videos {
+  padding: 3rem 0;
+  background: radial-gradient(circle at center, #3b3b3b 0%, #222 100%); /* Dark gradient */
+  color: white;
+}
+
+#videos h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+#videoFilter {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+iframe {
+  border-radius: 8px;
+}
+
+.btn-warning {
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-warning:hover {
+  background-color: #ffc107;
+  color: #000;
+}
+
+
+/* Featured Artists Section */
+.featured-artists {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.featured-artists h2 {
+  font-size: 2.5em;
+  color: #ffc107;
+  margin-bottom: 40px;
+}
+
+/* Slider Container */
+.slider-container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.artist-card {
+  background-color: #b9b8b8;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  margin: 0 15px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.artist-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.bio {
+  font-size: 1em;
+  color: #5e5c5c;
+  margin-bottom: 20px;
+}
+
+.profile-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffc107;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.profile-link:hover {
+  background-color: #f1cf0d;
+}
+
+/* Navigation Arrows */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  
+ 
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+
+/* Contact */
+#contact .form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+}
+
+#contact .form-control::placeholder {
+  color: #ccc;
+}
+
+#contact .form-control:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #ffcc00;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.form-control {
+  background-color: #222;
+  border: 1px solid #444;
+  color: #fff;
+}
+
+.form-control::placeholder {
+  color: #999;
+}
+
+.form-control:focus {
+  background-color: #1c1c1c;
+  border-color: #ffcc00;
+  color: #fff;
+}
+
+.btn-warning {
+  background-color: #ffcc00;
+  border: none;
+  color: #000;
+}
+
+.btn-warning:hover {
+  background-color: #e6b800;
+}
+
+/* Footer */
+.custom-footer img {
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.footer-text {
+  color: #ccc;
+}
+
+.social-icons a:hover {
+  color: #fff !important;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+/* Animate logo on load */
+@keyframes logoBounce {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Apply the animation on the logo in the footer */
+footer .logo-animation {
+  animation: logoBounce 2s ease-in-out infinite;
+}
+
+/* Hover effect on logo */
+footer .logo-animation:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
