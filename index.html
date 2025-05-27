@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Ethinic Bhojpuri Music</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap JS (with Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Font Awesome CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-3">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#home">
+        <img src="img/logo.png" alt="Logo" width="40" height="40" class="me-2">
+        <span class="brand-text">Ethinic Bhojpuri Music</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Service</a></li>
+          <a class="nav-link" href="#artist">Artist</a>
+          <li class="nav-item"><a class="nav-link" href="#videos">Videos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- Hero Section with Video Background -->
+  <section id="home" class="hero text-white">
+    <!-- Background Video -->
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="/video/video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Overlay (optional for readability) -->
+    <div class="overlay"></div>
+
+    <!-- Text Content -->
+    <div class="container">
+      <h1 class="pop-text">Feel the Ethinic Beats</h1>
+      <p class="lead pop-text delay">Bringing Authentic Bhojpuri Music to the World</p>
+    </div>
+  </section>
+
+
+  <!-- About Us Section -->
+  <section id="about" class="py-5 text-white" style="background: linear-gradient(135deg, #1b1b1b, #757373);">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Image -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="img/logo.png" alt="Ethinic Bhojpuri Music"
+            class="img-fluid rounded shadow-lg animate__animated animate__fadeInLeft" />
+        </div>
+
+        <!-- Text Content -->
+        <div class="col-md-6">
+          <h2 class="text-warning fw-bold mb-3 animate__animated animate__fadeInRight">About Us</h2>
+          <p class="lead">
+            <strong>Ethinic Bhojpuri Music</strong> isn't just a label—it's a cultural heartbeat. We're preserving the
+            legacy of Bhojpuri sound while amplifying modern voices to the world.
+          </p>
+          <p>
+            From folk classics to modern anthems, our platform empowers regional artists, connects communities, and
+            celebrates our heritage through content and live experiences.
+          </p>
+
+          <!-- Highlight Card -->
+          <div class="card bg-dark text-white border-0 shadow-sm mt-4">
+            <div class="card-body">
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><i class="fas fa-music text-success me-2"></i><strong>1M+ Views</strong> on trending
+                  tracks</li>
+                <li class="mb-2"><i class="fas fa-users text-success me-2"></i><strong>100+ Artists</strong> promoted
+                  globally</li>
+                <li class="mb-2"><i class="fas fa-calendar-alt text-success me-2"></i><strong>Live Events</strong>
+                  across India</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Optional Meet the Team Button -->
+          <button class="btn btn-outline-warning mt-4" data-bs-toggle="modal" data-bs-target="#teamModal">
+            Meet the Team
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meet the Team Modal -->
+  <div class="modal fade" id="teamModal" tabindex="-1" aria-labelledby="teamModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header border-0">
+          <h5 class="modal-title text-warning" id="teamModalLabel">Meet Our Core Team</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row text-center g-4">
+
+            <!-- Team Member 1 -->
+            <div class="col-md-6">
+              <div class="card bg-secondary text-white border-0 shadow">
+                <img src="img/t1.jpg" class="card-img-top" alt="Rahul Goswami">
+                <div class="card-body">
+                  <h5 class="card-title">Rahul Goswami</h5>
+                  <p class="card-text">Founder & Executive Producer. Driving vision, sound, and strategy at Ethinic
+                    Bhojpuri Music.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="col-md-6">
+              <div class="card bg-secondary text-white border-0 shadow">
+                <img src="img/t2.jpeg" class="card-img-top" alt="Prince Bharti">
+                <div class="card-body">
+                  <h5 class="card-title">Prince Bharti</h5>
+                  <p class="card-text">Music & Production Manager. Leading audio engineering and creative output for new
+                    releases.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <section id="vision-section" class="container my-5 text-center" aria-labelledby="vision-heading">
+    <i class="fas fa-bullseye text-warning mb-3 vision-icon" aria-hidden="true"></i>
+    <h2 id="vision-heading" class="text-warning">Our Vision</h2>
+    <p>
+      We envision a world where Bhojpuri music thrives — preserving its rich heritage while blending it with modern
+      rhythms, so the soul of our culture resonates across generations.
+    </p>
+  </section>
+
+
+  <!-- Services Section -->
+  <section id="services" class="py-5 bg-dark text-white text-center">
+    <div class="container">
+      <h2 class="mb-5 text-warning fw-bold">Our Services</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card bg-secondary h-100 shadow-lg border-0">
+            <div class="card-body">
+              <i class="fas fa-music fa-2x mb-3 text-warning"></i>
+              <h4 class="card-title">Music Production</h4>
+              <p class="card-text">High-quality Bhojpuri music creation with professional mixing and mastering.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card bg-secondary h-100 shadow-lg border-0">
+            <div class="card-body">
+              <i class="fas fa-bullhorn fa-2x mb-3 text-warning"></i>
+              <h4 class="card-title">Video Promotion</h4>
+              <p class="card-text">Promote songs with our large and growing YouTube & social media fanbase.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card bg-secondary h-100 shadow-lg border-0">
+            <div class="card-body">
+              <i class="fas fa-calendar-alt fa-2x mb-3 text-warning"></i>
+              <h4 class="card-title">Live Events</h4>
+              <p class="card-text">Host concerts and cultural shows to showcase Bhojpuri talent live on stage.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card bg-secondary h-100 shadow-lg border-0">
+            <div class="card-body">
+              <i class="fas fa-user-tie fa-2x mb-3 text-warning"></i>
+              <h4 class="card-title">Artist Management</h4>
+              <p class="card-text">From branding to bookings, we help artists grow their careers.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card bg-secondary h-100 shadow-lg border-0">
+            <div class="card-body">
+              <i class="fas fa-globe fa-2x mb-3 text-warning"></i>
+              <h4 class="card-title">Music Distribution</h4>
+              <p class="card-text">Distribute your music on Spotify, Apple Music, JioSaavn, and more.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card bg-secondary h-100 shadow-lg border-0">
+            <div class="card-body">
+              <i class="fas fa-studio-vinyl fa-2x mb-3 text-warning"></i>
+              <h4 class="card-title">Studio Rental</h4>
+              <p class="card-text">Rent our modern studio for your personal or commercial recordings.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<!-- Featured Artists Slider Section -->
+<section id="artist" class="featured-artists">
+
+  <h2>Meet Our Singer Artists</h2>
+
+  <div class="slider-container" style="position: relative; width: 1500px; overflow: hidden;">
+    <div class="slider" style="display: flex; transition: transform 0.5s ease;">
+      <div class="artist-card" style="min-width: 300px;">
+        <img src="/img/artist1.jpg" alt="Artist 1" class="artist-photo">
+        <h3>Khushi Kakkar</h3>
+        <p class="bio">An award-winning musician known for her soulful ballads.</p>
+        <a href="#" class="profile-link">Explore More</a>
+      </div>
+
+      <div class="artist-card" style="min-width: 300px;">
+        <img src="/img/artist2.jpg" alt="Artist 2" class="artist-photo">
+        <h3>Karishma Kakkar</h3>
+        <p class="bio">A pop sensation with a powerful voice and catchy tunes.</p>
+        <a href="#" class="profile-link">Explore More</a>
+      </div>
+
+      <div class="artist-card" style="min-width: 300px;">
+        <img src="/img/artist3.jpg" alt="Artist 3" class="artist-photo">
+        <h3>Abhishekh Giri</h3>
+        <p class="bio">A multi-talented artist blending rock and blues effortlessly.</p>
+        <a href="#" class="profile-link">Explore More</a>
+      </div>
+
+      <div class="artist-card" style="min-width: 300px;">
+        <img src="/img/artist4.jpg" alt="Artist 4" class="artist-photo">
+        <h3>Prabhakar Pandey</h3>
+        <p class="bio">A multi-talented artist blending rock and blues effortlessly.</p>
+        <a href="#" class="profile-link">Explore More</a>
+      </div>
+    </div>
+
+    <!-- Slider Navigation Arrows -->
+    <button class="prev" onclick="moveSlide(-1)" style="position: absolute; top: 50%; left: 0;">&#10094;</button>
+    <button class="next" onclick="moveSlide(1)" style="position: absolute; top: 50%; right: 0;">&#10095;</button>
+  </div>
+</section>
+
+
+
+  <!-- Videos Section -->
+  <section id="videos" class="py-5 text-white"
+    style="background: radial-gradient(circle at center, #222 0%, #000 100%);">
+    <div class="container youtube-embed">
+      <h2 class="text-center text-warning mb-4 fw-bold">Latest Releases</h2>
+
+      <!-- Dropdown Filter -->
+      <div class="text-center mb-4">
+        <label for="videoFilter" class="form-label fw-bold text-light me-2">Music by Type:</label>
+        <select id="videoFilter" class="form-select w-auto d-inline-block">
+          <option value="all">All</option>
+          <option value="video">Video</option>
+          <option value="audio">Audio</option>
+          <option value="folk">Folk</option>
+          <option value="romantic">Romantic</option>
+        </select>
+      </div>
+
+      <!-- Video Grid -->
+      <div class="row" id="videoList">
+        <!-- Video 1 -->
+        <div class="col-md-4 mb-4 video-item" data-category="video">
+          <div class="card bg-dark text-light border-0 shadow-sm h-100">
+            <div class="ratio ratio-16x9">
+              <a href="https://www.youtube.com/watch?v=66HGc789lg4" target="_blank" rel="noopener noreferrer">
+                <img src="https://img.youtube.com/vi/66HGc789lg4/hqdefault.jpg" alt="Hit Bhojpuri Track 2025"
+                  class="img-fluid" style="object-fit: cover; width: 100%; height: 100%;">
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-warning">Hit Bhojpuri Track 2025</h5>
+              <p class="card-text">Experience the most trending Bhojpuri sensation now on YouTube!</p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Video 2 -->
+        <div class="col-md-4 mb-4 video-item" data-category="video">
+          <div class="card bg-dark text-light border-0 shadow-sm h-100">
+            <div class="ratio ratio-16x9">
+              <a href="https://www.youtube.com/watch?v=oOqGOmvgefQ" target="_blank" rel="noopener noreferrer">
+                <img src="https://img.youtube.com/vi/oOqGOmvgefQ/hqdefault.jpg" alt="Lok Geet 2025" class="img-fluid"
+                  style="object-fit: cover; width: 100%; height: 100%;">
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-warning">Lok Geet 2025</h5>
+              <p class="card-text">Feel the power of new-age rock. Tune in now!</p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Video 3 -->
+        <div class="col-md-4 mb-4 video-item" data-category="video">
+          <div class="card bg-dark text-light border-0 shadow-sm h-100">
+            <div class="ratio ratio-16x9">
+              <a href="https://www.youtube.com/watch?v=oE41aZyxmgo" target="_blank" rel="noopener noreferrer">
+                <img src="https://img.youtube.com/vi/oE41aZyxmgo/hqdefault.jpg" alt="Love Ballad 2025" class="img-fluid"
+                  style="object-fit: cover; width: 100%; height: 100%;">
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-warning">Market Me Paida Na Hua Hai Song.</h5>
+              <p class="card-text">Enjoy the Song.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 4 -->
+        <div class="col-md-4 mb-4 video-item" data-category="video">
+          <div class="card bg-dark text-light border-0 shadow-sm h-100">
+            <div class="ratio ratio-16x9">
+              <a href="https://www.youtube.com/watch?v=jJGv9mY2mqo" target="_blank" rel="noopener noreferrer">
+                <img src="https://img.youtube.com/vi/jJGv9mY2mqo/hqdefault.jpg" alt="EDM Vibes 2025" class="img-fluid"
+                  style="object-fit: cover; width: 100%; height: 100%;">
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-warning">Emotional Song Vibes 2025</h5>
+              <p class="card-text">Ae Gori Fut Fut Rowabu | Bhojpuri Sad Song 2025 | Fell This Songs!</p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Video 5 -->
+        <div class="col-md-4 mb-4 video-item" data-category="video">
+          <div class="card bg-dark text-light border-0 shadow-sm h-100">
+            <div class="ratio ratio-16x9">
+              <a href="https://www.youtube.com/watch?v=Fk7FhKUkRh8" target="_blank" rel="noopener noreferrer">
+                <img src="https://img.youtube.com/vi/Fk7FhKUkRh8/hqdefault.jpg" alt="Hip Hop Hits 2025"
+                  class="img-fluid" style="object-fit: cover; width: 100%; height: 100%;">
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-warning">Vivah Geet 2024</h5>
+              <p class="card-text">Bhari Bhari Anjuri Me| New Bhojpuri Vivah Geet</p>
+            </div>
+          </div>
+        </div>
+
+
+       <!-- Video 6 -->
+<div class="col-md-4 mb-4 video-item" data-category="video">
+  <div class="card bg-dark text-light border-0 shadow-sm h-100">
+    <div class="ratio ratio-16x9">
+      <a href="https://www.youtube.com/watch?v=Wu1yDJY1AQg" target="_blank" rel="noopener noreferrer">
+        <img src="https://img.youtube.com/vi/Wu1yDJY1AQg/hqdefault.jpg" alt="Romantic Vibes 2025"
+          class="img-fluid" style="object-fit: cover; width: 100%; height: 100%;">
+      </a>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title text-warning">Romantic Vibes 2025</h5>
+      <p class="card-text"></p>
+    </div>Dhaniya Hamar | New Bhojpuri Song 2025
+  </div>
+</div>
+
+
+
+
+      <!-- Video 7 -->
+      <div class="col-md-4 mb-4 video-item" data-category="audio">
+        <div class="card bg-dark text-light border-0 shadow-sm h-100">
+          <div class="ratio ratio-16x9">
+            <a href="https://www.youtube.com/watch?v=XtA-cA69f8I" target="_blank" rel="noopener noreferrer">
+              <img src="https://img.youtube.com/vi/XtA-cA69f8I/hqdefault.jpg" alt="Festival Special" class="img-fluid"
+                style="object-fit: cover; width: 100%; height: 100%;">
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-warning">Sad Song 2025</h5>
+            <p class="card-text"> Ab Dil Na Diyai Na Dilwa Liyai | Sad Song 2025.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Hidden Video 8 -->
+
+      <div class="col-md-4 mb-4 video-item d-none" data-category="romantic">
+        <div class="card bg-dark text-light border-0 shadow-sm h-100">
+          <div class="ratio ratio-16x9">
+            <a href="https://www.youtube.com/watch?v=MAORBHf5ibw" target="_blank" rel="noopener noreferrer">
+              <img src="https://img.youtube.com/vi/MAORBHf5ibw/hqdefault.jpg" alt="Festival Special" class="img-fluid"
+                style="object-fit: cover; width: 100%; height: 100%;">
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-warning">Romantic Melody</h5>
+            <p class="card-text">A heart-touching love song featuring soulful Bhojpuri vocals.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hidden Video 9 -->
+      <div class="col-md-4 mb-4 video-item d-none" data-category="folk">
+        <div class="card bg-dark text-light border-0 shadow-sm h-100">
+          <div class="ratio ratio-16x9">
+            <a href="https://www.youtube.com/watch?v=0xgDn_lw0T8" target="_blank" rel="noopener noreferrer">
+              <img src="https://img.youtube.com/vi/0xgDn_lw0T8/hqdefault.jpg" alt="Traditional Folk Vibes"
+                class="img-fluid" style="object-fit: cover; width: 100%; height: 100%;">
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-warning">Traditional Folk Vibes</h5>
+            <p class="card-text">Immerse in the folk tunes from the heart of Bhojpuri Culture.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Load More Button -->
+      <div class="text-center mt-4">
+        <button class="btn btn-warning fw-bold" id="loadMoreBtn">Load More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section py-5 text-white"
+    style="background: url('img/contact-banner.jpg') center center / cover no-repeat fixed;">
+    <div class="container" style="background-color: rgba(0, 0, 0, 0.7); border-radius: 15px; padding: 40px;">
+      <div class="text-center mb-4">
+        <h2 class="section-title fw-bold text-warning">Get in Touch</h2>
+        <p class="section-subtitle">We’d love to hear from you. Send us a message below!</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label text-light">Your Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label text-light">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label text-light">Your Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Write your message here..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-warning w-100 fw-bold">Send Message</button>
+          </form>
+          <div class="contact-info text-center mt-4 text-light">
+            <p><strong>Email:</strong> ethinicbhojpurimusic@gmail.com</p>
+            <p><strong>Phone:</strong> +91-7004242088 [+91-8320842781] </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="custom-footer bg-dark text-white py-4">
+    <div class="container text-center">
+      <!-- Logo and Title -->
+      <div class="mb-3">
+        <img src="img/logo.png" alt="" width="60" height="60" class="mb-2 logo-animation">
+        <h5 class="footer-title fw-bold">Ethinic Bhojpuri Music</h5>
+      </div>
+
+      <!-- Tagline -->
+      <p class="footer-text fst-italic">Feel the rhythm of Bhojpuri beats – traditional, vibrant, and unforgettable.</p>
+
+      <!-- Social Media Icons -->
+      <div class="social-icons my-3">
+        <a href="https://www.youtube.com/@EthnicBhojpuriMusic" target="_blank" class="me-3 text-warning fs-4"><i
+            class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/instagram.com/ethnicbhojpurimusic" target="_blank"
+          class="me-3 text-warning fs-4"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/facebook.com/" target="_blank" class="text-warning fs-4"><i
+            class="fab fa-facebook"></i></a>
+      </div>
+
+      <!-- Copyright -->
+      <p class="mt-3 small">&copy; 2025 Ethinic Bhojpuri Music. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <script>
+    document.getElementById('loadMoreBtn').addEventListener('click', function () {
+      const hiddenVideos = document.querySelectorAll('.video-item.d-none');
+      hiddenVideos.forEach(video => video.classList.remove('d-none'));
+      this.style.display = 'none'; // Hide button after all are shown
+    });
+  </script>
+
+
+
+  <!-- Filter Script -->
+  <script>
+    document.getElementById('videoFilter').addEventListener('change', function () {
+      const selected = this.value;
+      const items = document.querySelectorAll('.video-item');
+
+      items.forEach(item => {
+        const category = item.getAttribute('data-category');
+
+        if (selected === 'all' || category === selected) {
+          item.classList.remove('d-none');
+        } else {
+          item.classList.add('d-none');
+        }
+      });
+
+      // Hide Load More when filtering
+      document.getElementById('loadMoreBtn').style.display = 'none';
+    });
+
+    // Load More functionality
+    document.getElementById('loadMoreBtn').addEventListener('click', function () {
+      const hiddenVideos = document.querySelectorAll('.video-item.d-none');
+      hiddenVideos.forEach(video => video.classList.remove('d-none'));
+      this.style.display = 'none';
+    });
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+      let currentSlide = 0;  // Start from the first slide
+      const slider = document.querySelector('.slider');
+      const totalSlides = document.querySelectorAll('.artist-card').length;
+
+      // Function to move the slide
+      function moveSlide(direction) {
+        currentSlide = currentSlide + direction;
+
+        // Loop around when reaching the end or beginning
+        if (currentSlide < 0) {
+          currentSlide = totalSlides - 1;  // Loop to the last slide
+        } else if (currentSlide >= totalSlides) {
+          currentSlide = 0;  // Loop to the first slide
+        }
+
+        // Move the slider to the current slide position
+        slider.style.transform = `translateX(-${currentSlide * 340}px)`; // Adjust for card width
+      }
+
+      // Add event listeners to navigation buttons
+      const prevButton = document.querySelector('.prev');
+      const nextButton = document.querySelector('.next');
+      prevButton.addEventListener('click', function () {
+        moveSlide(-1);
+      });
+      nextButton.addEventListener('click', function () {
+        moveSlide(1);
+      });
+    });
+  </script>
+
+<script>
+  const slider = document.getElementById('slider');
+  const cards = document.querySelectorAll('.artist-card');
+  const cardWidth = cards[0].offsetWidth + 30; // 300px width + 2 * 15px margin
+  const totalCards = cards.length;
+  let index = 0;
+
+  function moveSlide(direction) {
+    index += direction;
+
+    if (index < 0) {
+      index = totalCards - 1;
+    } else if (index >= totalCards) {
+      index = 0;
+    }
+
+    slider.style.transform = `translateX(${-index * cardWidth}px)`;
+  }
+</script>
+
+</body>
+
+</html>
